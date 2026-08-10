@@ -39,6 +39,8 @@ targets:
     dependencies:
       - target: HyliosScanActivity
         embed: true
+      - target: HyliosClip
+        embed: true
     info:
       path: EtherealDimension/Info.plist
       properties:
@@ -71,6 +73,31 @@ targets:
         DEVELOPMENT_TEAM: 5Y7NBCKHJP
         TARGETED_DEVICE_FAMILY: "1,2"
         SWIFT_VERSION: "6.0"
+  HyliosClip:
+    type: com.apple.product-type.application.on-demand-install-capable
+    platform: iOS
+    sources:
+      - AppClip
+      - path: EtherealDimension
+        excludes:
+          - "HyliosApp.swift"
+          - "Info.plist"
+      - ScanActivity/ScanActivityAttributes.swift
+    info:
+      path: AppClip/Info.plist
+      properties:
+        CFBundleDisplayName: Hylios
+        NSCameraUsageDescription: "Hylios uses the camera to scan your space into a 3D model."
+        UILaunchScreen: {}
+        NSSupportsLiveActivities: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.binarybros.EtherealDimension.Clip
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: 5Y7NBCKHJP
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SWIFT_VERSION: "6.0"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
   EtherealDimensionTests:
     type: bundle.unit-test
     platform: iOS
