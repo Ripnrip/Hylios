@@ -19,6 +19,7 @@ Hylios ("Magical Space Intelligence") is the published AR room-scanning iOS app 
 | D3 | **`Ripnrip/Hylios` is the primary public home** (origin). `gthemystic/Hylios` is a public mirror. `noeticactivity` kept as `upstream` for traceability. |
 | D4 | Develop in `/Users/admin/Developer/Hylios` on **Studio** (full Edit/Write + canon + banner tooling); build sim via `xcodebuild` on Studio; **device QA on a LiDAR iPhone Pro** by the user (RoomPlan requires LiDAR). |
 | D5 | `gthemystic` mirror is **blocked on auth** — needs `! gh auth login --web` as gthemystic + `gh auth switch -u gthemystic` (or create `gthemystic/Hylios` and add `Ripnrip` as collaborator). Ripnrip work proceeds immediately. |
+| D6 | **App Clip modernized** as a SwiftUI target sharing the app modules — a try-before-install guided single-room scan via App Clip Experience URL/QR. |
 
 ## Phases (each ends with a verification gate)
 
@@ -48,11 +49,13 @@ Hylios ("Magical Space Intelligence") is the published AR room-scanning iOS app 
 - **Curated open-swiftui-animations** (3–5, attributed in README + inline): scan-beam pulse, shimmer/skeleton during USDZ processing, spring sheet transitions, success celebration on export. Reduce-Motion fallbacks (canon `animations.md`/`motion-haptics.md`).
 - **Live Activities (ActivityKit, canon `platform-extensions.md`):** new **Widget Extension target**; `ScanActivityAttributes` + `ScanLiveActivity` (lock-screen + Dynamic Island compact/expanded) showing "Scanning your space" → done. `if #available(iOS 18)` for the lock-screen LA list.
 - **Liquid Glass (opt-in):** `UI/GlassSurface.swift` wraps `glassEffect` behind `if #available(iOS 26, *)` for the nav bar / export sheet floating over the camera feed.
+- **App Clip (updated):** a new **App Clip target** sharing the app's Swift modules, with a dedicated `@main HyliosClipApp` entry that drops the user straight into a guided single-room scan (no onboarding / mailing-list gate) and an `onAppClipURL` handler. Lightweight initial experience (≤10 MB); the full app is offered after a successful scan. Existing target (if present) is modernized; otherwise added fresh.
 - **Tests (canon `testing.md`):** swift-testing for enum logic + export-URL building; `#Preview` state matrix for each screen; snapshot tests where visuals matter.
 
 ### Phase 5 — Ship prep  →  verify: archive uploads to TestFlight (ASK before shipping)
 - Bump `MARKETING_VERSION` (1.3 → 2.0, reflecting the rewrite) + build number per the Binary Bros scheme `YYMMDD00N`.
 - Archive + upload via Binary Bros ASC key `H93L552576` / issuer `69a6de7f-…` / team `5Y7NBCKHJP` (per `binarybros-ios-ship` memory). **Confirm with user before any upload.**
+- Update the App Store Connect **App Clip Experience** to point at the new build (URL / QR / NFC invocation), preserving the existing experience IDs; verify the App Clip card + invocation URL render the new scan flow.
 
 ## Critical files
 
@@ -72,7 +75,7 @@ Hylios ("Magical Space Intelligence") is the published AR room-scanning iOS app 
 
 ## Needs from the user
 
-- **gthemystic auth** (for the mirror): `! gh auth login --hostname github.com --git-protocol https --web` then `! gh auth switch -u gthemystic` — or create `gthemync/Hylios` and add `Ripnrip` as collaborator. (Ripnrip work starts now regardless.)
+- **gthemystic auth** (for the mirror): `! gh auth login --hostname github.com --git-protocol https --web` then `! gh auth switch -u gthemystic` — or create `gthemystic/Hylios` and add `Ripnrip` as collaborator. (Ripnrip work starts now regardless.)
 - **A LiDAR iPhone Pro** for real scan/haptic/Live-Activity QA (simulator has no RoomPlan/LiDAR).
 - **Confirm before TestFlight upload** in Phase 5.
 
