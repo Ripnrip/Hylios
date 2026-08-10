@@ -1,0 +1,71 @@
+# 🎭 EtherealDimension (Hylios) — XcodeGen project manifest
+# Regenerates a clean SwiftUI/Swift-6 project. Run: `xcodegen generate`
+name: EtherealDimension
+options:
+  bundleIdPrefix: com.binarybros
+  deploymentTarget:
+    iOS: "18.0"
+  developmentLanguage: en
+  groupSortPosition: top
+  generateEmptyDirectories: true
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    IPHONEOS_DEPLOYMENT_TARGET: "18.0"
+    DEVELOPMENT_TEAM: 5Y7NBCKHJP
+    CODE_SIGN_STYLE: Automatic
+    ENABLE_USER_SCRIPT_SANDBOXING: "NO"
+    MARKETING_VERSION: "2.0"
+    CURRENT_PROJECT_VERSION: "1"
+targets:
+  EtherealDimension:
+    type: application
+    platform: iOS
+    sources:
+      - path: EtherealDimension
+        excludes:
+          - "AppDelegate.swift"
+          - "SceneDelegate.swift"
+          - "RoomCaptureViewController.swift"
+          - "RoomTypeViewController.swift"
+          - "OnboardingViewController.swift"
+          - "Main.storyboard"
+          - "UnsupportedDevice.storyboard"
+          - "LaunchScreen.storyboard"
+          - "Info.plist"
+          - "art.scnassets"
+    info:
+      path: EtherealDimension/Info.plist
+      properties:
+        CFBundleDisplayName: Hylios
+        NSCameraUsageDescription: "Hylios uses the camera to scan your space into a 3D model."
+        UILaunchScreen: {}
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.binarybros.EtherealDimension
+        TARGETED_DEVICE_FAMILY: "1,2"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ENABLE_PREVIEWS: "YES"
+  EtherealDimensionTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - EtherealDimensionTests
+    dependencies:
+      - target: EtherealDimension
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.binarybros.EtherealDimensionTests
+        GENERATE_INFOPLIST_FILE: "YES"
+  EtherealDimensionUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - EtherealDimensionUITests
+    dependencies:
+      - target: EtherealDimension
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.binarybros.EtherealDimensionUITests
+        GENERATE_INFOPLIST_FILE: "YES"

@@ -1,29 +1,14 @@
 # 🌙 macOS
 .DS_Store
-.AppleDouble
-.LSOverride
 
-# 🎭 Xcode / SwiftPM build artifacts (the ghosts of builds past)
-build/
+# 🎭 Xcode build artifacts (the ghosts of builds past)
 DerivedData/
-*.xcuserstate
+build/
 xcuserdata/
-*.xcuserdata/
+*.xcuserstate
 *.xcuserdatad/
 *.moved-aside
-*.hmap
-*.ipa
-*.dSYM.zip
-*.dSYM
 
-# ✨ Swift Package Manager
+# ✨ SwiftPM
 .build/
 .swiftpm/
-Package.resolved
-
-# 🧪 CocoaPods (just in case the old world returns)
-Pods/
-
-# 🎪 Misc theater
-*.swp
-*.lock

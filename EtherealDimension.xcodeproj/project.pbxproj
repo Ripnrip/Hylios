@@ -3,324 +3,372 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CF38CC2A2B2D619A004CCFEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF38CC292B2D619A004CCFEB /* LaunchScreen.storyboard */; };
-		CF38CC2E2B2D61D5004CCFEB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF38CC2D2B2D61D5004CCFEB /* SceneDelegate.swift */; };
-		CF38CC312B2D6314004CCFEB /* UnsupportedDevice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF38CC302B2D6314004CCFEB /* UnsupportedDevice.storyboard */; };
-		CFB83A352B2D5749005A3B66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB83A342B2D5749005A3B66 /* AppDelegate.swift */; };
-		CFB83A372B2D5749005A3B66 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = CFB83A362B2D5749005A3B66 /* art.scnassets */; };
-		CFB83A3E2B2D574A005A3B66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFB83A3D2B2D574A005A3B66 /* Assets.xcassets */; };
-		CFB83A482B2D574A005A3B66 /* EtherealDimensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB83A472B2D574A005A3B66 /* EtherealDimensionTests.swift */; };
-		CFB83A522B2D574A005A3B66 /* EtherealDimensionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB83A512B2D574A005A3B66 /* EtherealDimensionUITests.swift */; };
-		CFB83A542B2D574A005A3B66 /* EtherealDimensionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB83A532B2D574A005A3B66 /* EtherealDimensionUITestsLaunchTests.swift */; };
-		CFB83A632B2D5765005A3B66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB83A602B2D5764005A3B66 /* Main.storyboard */; };
-		CFB83A642B2D5765005A3B66 /* RoomCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB83A612B2D5764005A3B66 /* RoomCaptureViewController.swift */; };
-		CFB83A652B2D5765005A3B66 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB83A622B2D5765005A3B66 /* OnboardingViewController.swift */; };
-		CFF19F3A2B469F57004E9CC7 /* RoomTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF19F392B469F57004E9CC7 /* RoomTypeViewController.swift */; };
+		0394C0AE67DAB029DEC0B3E4 /* MeshBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6C4F1BDC1810A76AB178ED /* MeshBackground.swift */; };
+		12EEA17EB8632404515D1441 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E06AA77F90C123BA72C8 /* Logger.swift */; };
+		30CBB6CBA4F9A1CD316E7436 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2C48F8ECEE1EECF931F161 /* ScanView.swift */; };
+		4383DA6CB68AB86AFB194F2A /* SpaceTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F904E031EC84CF1690F726C /* SpaceTypes.swift */; };
+		4F491647C234926BCF90228E /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CB2DEFEFB97FF134487851 /* Haptics.swift */; };
+		4F845F84276518187A7AF8EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632C6194F5639A9DD73D67EF /* Assets.xcassets */; };
+		7C973CC2615C086A11CB4F34 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D222F0A4CF1D86F6B9183D79 /* RootView.swift */; };
+		7D291BA94F5FCDBCC56F2CBC /* EtherealDimensionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15027ED139FD43E481B3899A /* EtherealDimensionUITests.swift */; };
+		C6929EC58585C7AB4A97DCC6 /* UnsupportedDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2434ABC63FC855981048A19 /* UnsupportedDeviceView.swift */; };
+		D1401356B2200FF871E3AAE0 /* EtherealDimensionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB326ABB8E8E00ECBEC1841 /* EtherealDimensionUITestsLaunchTests.swift */; };
+		EA0CC765DFD06F1F95E3C69B /* EtherealDimensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0782386F2F9811552052E535 /* EtherealDimensionTests.swift */; };
+		FAB3E49EBCB4E56F464543CA /* HyliosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8091B39324A4356EC84A26 /* HyliosApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CFB83A442B2D574A005A3B66 /* PBXContainerItemProxy */ = {
+		1D3B99E8EB2FAE97353AB022 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CFB83A292B2D5749005A3B66 /* Project object */;
+			containerPortal = AE577E0DB6691CD380C7503E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CFB83A302B2D5749005A3B66;
+			remoteGlobalIDString = A8721291EDE1C54DD59E211C;
 			remoteInfo = EtherealDimension;
 		};
-		CFB83A4E2B2D574A005A3B66 /* PBXContainerItemProxy */ = {
+		B62A637BB8BF4420F7793093 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CFB83A292B2D5749005A3B66 /* Project object */;
+			containerPortal = AE577E0DB6691CD380C7503E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CFB83A302B2D5749005A3B66;
+			remoteGlobalIDString = A8721291EDE1C54DD59E211C;
 			remoteInfo = EtherealDimension;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CF38CC292B2D619A004CCFEB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CF38CC2B2B2D61C9004CCFEB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CF38CC2D2B2D61D5004CCFEB /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CF38CC302B2D6314004CCFEB /* UnsupportedDevice.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UnsupportedDevice.storyboard; sourceTree = "<group>"; };
-		CFB83A312B2D5749005A3B66 /* EtherealDimension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EtherealDimension.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFB83A342B2D5749005A3B66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CFB83A362B2D5749005A3B66 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		CFB83A3D2B2D574A005A3B66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CFB83A432B2D574A005A3B66 /* EtherealDimensionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EtherealDimensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFB83A472B2D574A005A3B66 /* EtherealDimensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherealDimensionTests.swift; sourceTree = "<group>"; };
-		CFB83A4D2B2D574A005A3B66 /* EtherealDimensionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EtherealDimensionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFB83A512B2D574A005A3B66 /* EtherealDimensionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherealDimensionUITests.swift; sourceTree = "<group>"; };
-		CFB83A532B2D574A005A3B66 /* EtherealDimensionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherealDimensionUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		CFB83A602B2D5764005A3B66 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		CFB83A612B2D5764005A3B66 /* RoomCaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomCaptureViewController.swift; sourceTree = "<group>"; };
-		CFB83A622B2D5765005A3B66 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
-		CFF19F392B469F57004E9CC7 /* RoomTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomTypeViewController.swift; sourceTree = "<group>"; };
+		0782386F2F9811552052E535 /* EtherealDimensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherealDimensionTests.swift; sourceTree = "<group>"; };
+		15027ED139FD43E481B3899A /* EtherealDimensionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherealDimensionUITests.swift; sourceTree = "<group>"; };
+		2D2C48F8ECEE1EECF931F161 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		2F1B69A664B2C812FB6630C1 /* EtherealDimensionUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = EtherealDimensionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B8091B39324A4356EC84A26 /* HyliosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyliosApp.swift; sourceTree = "<group>"; };
+		60B3E06AA77F90C123BA72C8 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		62CB2DEFEFB97FF134487851 /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
+		632C6194F5639A9DD73D67EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A6C4F1BDC1810A76AB178ED /* MeshBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshBackground.swift; sourceTree = "<group>"; };
+		6DB326ABB8E8E00ECBEC1841 /* EtherealDimensionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherealDimensionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9F904E031EC84CF1690F726C /* SpaceTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceTypes.swift; sourceTree = "<group>"; };
+		C0E81AC4B1FCECD524F5B630 /* EtherealDimension.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = EtherealDimension.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2434ABC63FC855981048A19 /* UnsupportedDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsupportedDeviceView.swift; sourceTree = "<group>"; };
+		D222F0A4CF1D86F6B9183D79 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		F13A94B81ED57D208428B155 /* EtherealDimensionTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = EtherealDimensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFrameworksBuildPhase section */
-		CFB83A2E2B2D5749005A3B66 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CFB83A402B2D574A005A3B66 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CFB83A4A2B2D574A005A3B66 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
 /* Begin PBXGroup section */
-		CFB83A282B2D5749005A3B66 = {
+		0381A8D61F157566577B0FEA /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				CFB83A332B2D5749005A3B66 /* EtherealDimension */,
-				CFB83A462B2D574A005A3B66 /* EtherealDimensionTests */,
-				CFB83A502B2D574A005A3B66 /* EtherealDimensionUITests */,
-				CFB83A322B2D5749005A3B66 /* Products */,
+				F71420C49B3402B99DC56BFF /* Root */,
+				7F225335C2925691BDA7572D /* Scan */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		132C1DA3B456D01DE3E0E55C = {
+			isa = PBXGroup;
+			children = (
+				BFF0569AF87244DAB0B9C062 /* EtherealDimension */,
+				49CD1C8190F55A2501B2D116 /* EtherealDimensionTests */,
+				81BE7A8B13E8AC7855DB3C34 /* EtherealDimensionUITests */,
+				A4FC71AF43C275370D1DA5BF /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CFB83A322B2D5749005A3B66 /* Products */ = {
+		49CD1C8190F55A2501B2D116 /* EtherealDimensionTests */ = {
 			isa = PBXGroup;
 			children = (
-				CFB83A312B2D5749005A3B66 /* EtherealDimension.app */,
-				CFB83A432B2D574A005A3B66 /* EtherealDimensionTests.xctest */,
-				CFB83A4D2B2D574A005A3B66 /* EtherealDimensionUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		CFB83A332B2D5749005A3B66 /* EtherealDimension */ = {
-			isa = PBXGroup;
-			children = (
-				CFB83A342B2D5749005A3B66 /* AppDelegate.swift */,
-				CF38CC2D2B2D61D5004CCFEB /* SceneDelegate.swift */,
-				CFB83A362B2D5749005A3B66 /* art.scnassets */,
-				CFB83A602B2D5764005A3B66 /* Main.storyboard */,
-				CFB83A622B2D5765005A3B66 /* OnboardingViewController.swift */,
-				CFB83A612B2D5764005A3B66 /* RoomCaptureViewController.swift */,
-				CFF19F392B469F57004E9CC7 /* RoomTypeViewController.swift */,
-				CFB83A3D2B2D574A005A3B66 /* Assets.xcassets */,
-				CF38CC292B2D619A004CCFEB /* LaunchScreen.storyboard */,
-				CF38CC302B2D6314004CCFEB /* UnsupportedDevice.storyboard */,
-				CF38CC2B2B2D61C9004CCFEB /* Info.plist */,
-			);
-			path = EtherealDimension;
-			sourceTree = "<group>";
-		};
-		CFB83A462B2D574A005A3B66 /* EtherealDimensionTests */ = {
-			isa = PBXGroup;
-			children = (
-				CFB83A472B2D574A005A3B66 /* EtherealDimensionTests.swift */,
+				0782386F2F9811552052E535 /* EtherealDimensionTests.swift */,
 			);
 			path = EtherealDimensionTests;
 			sourceTree = "<group>";
 		};
-		CFB83A502B2D574A005A3B66 /* EtherealDimensionUITests */ = {
+		7F225335C2925691BDA7572D /* Scan */ = {
 			isa = PBXGroup;
 			children = (
-				CFB83A512B2D574A005A3B66 /* EtherealDimensionUITests.swift */,
-				CFB83A532B2D574A005A3B66 /* EtherealDimensionUITestsLaunchTests.swift */,
+				2D2C48F8ECEE1EECF931F161 /* ScanView.swift */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		81BE7A8B13E8AC7855DB3C34 /* EtherealDimensionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				15027ED139FD43E481B3899A /* EtherealDimensionUITests.swift */,
+				6DB326ABB8E8E00ECBEC1841 /* EtherealDimensionUITestsLaunchTests.swift */,
 			);
 			path = EtherealDimensionUITests;
+			sourceTree = "<group>";
+		};
+		92321E8297AA224DA902D57C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CDF863E064F298FD9DABDE82 /* Haptics */,
+				FC9AFB2CF9B8F250ADB830FA /* Logger */,
+				C37454FC18D37308FF9AF441 /* Models */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		975E4D0B2459A7FA317CCA7B /* Brand */ = {
+			isa = PBXGroup;
+			children = (
+				6A6C4F1BDC1810A76AB178ED /* MeshBackground.swift */,
+			);
+			path = Brand;
+			sourceTree = "<group>";
+		};
+		A128011B3429C05C5E369359 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				975E4D0B2459A7FA317CCA7B /* Brand */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A4FC71AF43C275370D1DA5BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0E81AC4B1FCECD524F5B630 /* EtherealDimension.app */,
+				F13A94B81ED57D208428B155 /* EtherealDimensionTests.xctest */,
+				2F1B69A664B2C812FB6630C1 /* EtherealDimensionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFF0569AF87244DAB0B9C062 /* EtherealDimension */ = {
+			isa = PBXGroup;
+			children = (
+				92321E8297AA224DA902D57C /* Core */,
+				0381A8D61F157566577B0FEA /* Features */,
+				A128011B3429C05C5E369359 /* UI */,
+				632C6194F5639A9DD73D67EF /* Assets.xcassets */,
+				3B8091B39324A4356EC84A26 /* HyliosApp.swift */,
+			);
+			path = EtherealDimension;
+			sourceTree = "<group>";
+		};
+		C37454FC18D37308FF9AF441 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9F904E031EC84CF1690F726C /* SpaceTypes.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CDF863E064F298FD9DABDE82 /* Haptics */ = {
+			isa = PBXGroup;
+			children = (
+				62CB2DEFEFB97FF134487851 /* Haptics.swift */,
+			);
+			path = Haptics;
+			sourceTree = "<group>";
+		};
+		F71420C49B3402B99DC56BFF /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				D222F0A4CF1D86F6B9183D79 /* RootView.swift */,
+				C2434ABC63FC855981048A19 /* UnsupportedDeviceView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		FC9AFB2CF9B8F250ADB830FA /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				60B3E06AA77F90C123BA72C8 /* Logger.swift */,
+			);
+			path = Logger;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CFB83A302B2D5749005A3B66 /* EtherealDimension */ = {
+		484CFB6A4CADAAAF7554F922 /* EtherealDimensionUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CFB83A572B2D574A005A3B66 /* Build configuration list for PBXNativeTarget "EtherealDimension" */;
+			buildConfigurationList = 0B838790801A54C86363D88C /* Build configuration list for PBXNativeTarget "EtherealDimensionUITests" */;
 			buildPhases = (
-				CFB83A2D2B2D5749005A3B66 /* Sources */,
-				CFB83A2E2B2D5749005A3B66 /* Frameworks */,
-				CFB83A2F2B2D5749005A3B66 /* Resources */,
+				BD67E42DC6D5D12DD4A37CE7 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F19D34913C1EF4A837F846E /* PBXTargetDependency */,
+			);
+			name = EtherealDimensionUITests;
+			packageProductDependencies = (
+			);
+			productName = EtherealDimensionUITests;
+			productReference = 2F1B69A664B2C812FB6630C1 /* EtherealDimensionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		51988EEC35C4EF4ED4A84DDF /* EtherealDimensionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B4640323DBA5812339CCBA9 /* Build configuration list for PBXNativeTarget "EtherealDimensionTests" */;
+			buildPhases = (
+				C222147D1B57CB813AAD8BC6 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05C581533314B8A792C7F39E /* PBXTargetDependency */,
+			);
+			name = EtherealDimensionTests;
+			packageProductDependencies = (
+			);
+			productName = EtherealDimensionTests;
+			productReference = F13A94B81ED57D208428B155 /* EtherealDimensionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A8721291EDE1C54DD59E211C /* EtherealDimension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7C4BECEE3CE8F5BAB0A0CEC /* Build configuration list for PBXNativeTarget "EtherealDimension" */;
+			buildPhases = (
+				19E445268415476C7C8AD813 /* Sources */,
+				DFFCB7720400C7471FB41813 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = EtherealDimension;
+			packageProductDependencies = (
+			);
 			productName = EtherealDimension;
-			productReference = CFB83A312B2D5749005A3B66 /* EtherealDimension.app */;
+			productReference = C0E81AC4B1FCECD524F5B630 /* EtherealDimension.app */;
 			productType = "com.apple.product-type.application";
-		};
-		CFB83A422B2D574A005A3B66 /* EtherealDimensionTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CFB83A5A2B2D574A005A3B66 /* Build configuration list for PBXNativeTarget "EtherealDimensionTests" */;
-			buildPhases = (
-				CFB83A3F2B2D574A005A3B66 /* Sources */,
-				CFB83A402B2D574A005A3B66 /* Frameworks */,
-				CFB83A412B2D574A005A3B66 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CFB83A452B2D574A005A3B66 /* PBXTargetDependency */,
-			);
-			name = EtherealDimensionTests;
-			productName = EtherealDimensionTests;
-			productReference = CFB83A432B2D574A005A3B66 /* EtherealDimensionTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		CFB83A4C2B2D574A005A3B66 /* EtherealDimensionUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CFB83A5D2B2D574A005A3B66 /* Build configuration list for PBXNativeTarget "EtherealDimensionUITests" */;
-			buildPhases = (
-				CFB83A492B2D574A005A3B66 /* Sources */,
-				CFB83A4A2B2D574A005A3B66 /* Frameworks */,
-				CFB83A4B2B2D574A005A3B66 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CFB83A4F2B2D574A005A3B66 /* PBXTargetDependency */,
-			);
-			name = EtherealDimensionUITests;
-			productName = EtherealDimensionUITests;
-			productReference = CFB83A4D2B2D574A005A3B66 /* EtherealDimensionUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CFB83A292B2D5749005A3B66 /* Project object */ = {
+		AE577E0DB6691CD380C7503E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1510;
-				LastUpgradeCheck = 1510;
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					CFB83A302B2D5749005A3B66 = {
-						CreatedOnToolsVersion = 15.1;
+					484CFB6A4CADAAAF7554F922 = {
+						DevelopmentTeam = 5Y7NBCKHJP;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A8721291EDE1C54DD59E211C;
 					};
-					CFB83A422B2D574A005A3B66 = {
-						CreatedOnToolsVersion = 15.1;
-						TestTargetID = CFB83A302B2D5749005A3B66;
+					51988EEC35C4EF4ED4A84DDF = {
+						DevelopmentTeam = 5Y7NBCKHJP;
+						ProvisioningStyle = Automatic;
 					};
-					CFB83A4C2B2D574A005A3B66 = {
-						CreatedOnToolsVersion = 15.1;
-						TestTargetID = CFB83A302B2D5749005A3B66;
+					A8721291EDE1C54DD59E211C = {
+						DevelopmentTeam = 5Y7NBCKHJP;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = CFB83A2C2B2D5749005A3B66 /* Build configuration list for PBXProject "EtherealDimension" */;
-			compatibilityVersion = "Xcode 14.0";
+			buildConfigurationList = 6417588BE9F0FC043A50ACF0 /* Build configuration list for PBXProject "EtherealDimension" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
-			mainGroup = CFB83A282B2D5749005A3B66;
-			productRefGroup = CFB83A322B2D5749005A3B66 /* Products */;
+			mainGroup = 132C1DA3B456D01DE3E0E55C;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A4FC71AF43C275370D1DA5BF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CFB83A302B2D5749005A3B66 /* EtherealDimension */,
-				CFB83A422B2D574A005A3B66 /* EtherealDimensionTests */,
-				CFB83A4C2B2D574A005A3B66 /* EtherealDimensionUITests */,
+				A8721291EDE1C54DD59E211C /* EtherealDimension */,
+				51988EEC35C4EF4ED4A84DDF /* EtherealDimensionTests */,
+				484CFB6A4CADAAAF7554F922 /* EtherealDimensionUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CFB83A2F2B2D5749005A3B66 /* Resources */ = {
+		DFFCB7720400C7471FB41813 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF38CC312B2D6314004CCFEB /* UnsupportedDevice.storyboard in Resources */,
-				CFB83A372B2D5749005A3B66 /* art.scnassets in Resources */,
-				CF38CC2A2B2D619A004CCFEB /* LaunchScreen.storyboard in Resources */,
-				CFB83A3E2B2D574A005A3B66 /* Assets.xcassets in Resources */,
-				CFB83A632B2D5765005A3B66 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CFB83A412B2D574A005A3B66 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CFB83A4B2B2D574A005A3B66 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				4F845F84276518187A7AF8EC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CFB83A2D2B2D5749005A3B66 /* Sources */ = {
+		19E445268415476C7C8AD813 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFF19F3A2B469F57004E9CC7 /* RoomTypeViewController.swift in Sources */,
-				CFB83A352B2D5749005A3B66 /* AppDelegate.swift in Sources */,
-				CFB83A642B2D5765005A3B66 /* RoomCaptureViewController.swift in Sources */,
-				CFB83A652B2D5765005A3B66 /* OnboardingViewController.swift in Sources */,
-				CF38CC2E2B2D61D5004CCFEB /* SceneDelegate.swift in Sources */,
+				4F491647C234926BCF90228E /* Haptics.swift in Sources */,
+				FAB3E49EBCB4E56F464543CA /* HyliosApp.swift in Sources */,
+				12EEA17EB8632404515D1441 /* Logger.swift in Sources */,
+				0394C0AE67DAB029DEC0B3E4 /* MeshBackground.swift in Sources */,
+				7C973CC2615C086A11CB4F34 /* RootView.swift in Sources */,
+				30CBB6CBA4F9A1CD316E7436 /* ScanView.swift in Sources */,
+				4383DA6CB68AB86AFB194F2A /* SpaceTypes.swift in Sources */,
+				C6929EC58585C7AB4A97DCC6 /* UnsupportedDeviceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CFB83A3F2B2D574A005A3B66 /* Sources */ = {
+		BD67E42DC6D5D12DD4A37CE7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFB83A482B2D574A005A3B66 /* EtherealDimensionTests.swift in Sources */,
+				7D291BA94F5FCDBCC56F2CBC /* EtherealDimensionUITests.swift in Sources */,
+				D1401356B2200FF871E3AAE0 /* EtherealDimensionUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CFB83A492B2D574A005A3B66 /* Sources */ = {
+		C222147D1B57CB813AAD8BC6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFB83A522B2D574A005A3B66 /* EtherealDimensionUITests.swift in Sources */,
-				CFB83A542B2D574A005A3B66 /* EtherealDimensionUITestsLaunchTests.swift in Sources */,
+				EA0CC765DFD06F1F95E3C69B /* EtherealDimensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CFB83A452B2D574A005A3B66 /* PBXTargetDependency */ = {
+		05C581533314B8A792C7F39E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CFB83A302B2D5749005A3B66 /* EtherealDimension */;
-			targetProxy = CFB83A442B2D574A005A3B66 /* PBXContainerItemProxy */;
+			target = A8721291EDE1C54DD59E211C /* EtherealDimension */;
+			targetProxy = 1D3B99E8EB2FAE97353AB022 /* PBXContainerItemProxy */;
 		};
-		CFB83A4F2B2D574A005A3B66 /* PBXTargetDependency */ = {
+		4F19D34913C1EF4A837F846E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CFB83A302B2D5749005A3B66 /* EtherealDimension */;
-			targetProxy = CFB83A4E2B2D574A005A3B66 /* PBXContainerItemProxy */;
+			target = A8721291EDE1C54DD59E211C /* EtherealDimension */;
+			targetProxy = B62A637BB8BF4420F7793093 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		CFB83A552B2D574A005A3B66 /* Debug */ = {
+		0DD5CE8D3529F849C7B03408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.binarybros.EtherealDimensionUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EtherealDimension;
+			};
+			name = Debug;
+		};
+		1D31A1B4CD2595DA5B261BBD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -346,18 +394,21 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 5Y7NBCKHJP;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
 					"$(inherited)",
+					"DEBUG=1",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -365,27 +416,28 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_KEY_NSMainNibFile = Main;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 2.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
-		CFB83A562B2D574A005A3B66 /* Release */ = {
+		87D950EBC0DA0A4763066323 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -411,12 +463,15 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 5Y7NBCKHJP;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -424,202 +479,144 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_KEY_NSMainNibFile = Main;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 2.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				VALIDATE_PRODUCT = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
-		CFB83A582B2D574A005A3B66 /* Debug */ = {
+		96632997222ADED3AFFC3BEC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5Y7NBCKHJP;
-				GENERATE_INFOPLIST_FILE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = EtherealDimension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Hylios;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
-				INFOPLIST_KEY_NSMainNibFile = "";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
-				INFOPLIST_KEY_UIRequiresFullScreen = YES;
-				INFOPLIST_KEY_UIStatusBarHidden = NO;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.binarybros.EtherealDimension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = Release;
 		};
-		CFB83A592B2D574A005A3B66 /* Release */ = {
+		AF9FD47ACAA2BF9FFDE9C2F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.binarybros.EtherealDimensionUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EtherealDimension;
+			};
+			name = Release;
+		};
+		EFE8E22C4E3EF4398778AA01 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5Y7NBCKHJP;
-				GENERATE_INFOPLIST_FILE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = EtherealDimension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Hylios;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
-				INFOPLIST_KEY_NSMainNibFile = "";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
-				INFOPLIST_KEY_UIRequiresFullScreen = YES;
-				INFOPLIST_KEY_UIStatusBarHidden = NO;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.binarybros.EtherealDimension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		CFB83A5B2B2D574A005A3B66 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5Y7NBCKHJP;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.binarybros.EtherealDimensionTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EtherealDimension.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EtherealDimension";
 			};
 			name = Debug;
 		};
-		CFB83A5C2B2D574A005A3B66 /* Release */ = {
+		F534C0C2938EEA991333FED6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5Y7NBCKHJP;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				MARKETING_VERSION = 1.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.binarybros.EtherealDimensionTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EtherealDimension.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EtherealDimension";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EtherealDimension.app/EtherealDimension";
 			};
 			name = Release;
 		};
-		CFB83A5E2B2D574A005A3B66 /* Debug */ = {
+		FE7BBEF9FAE0DDC10A174162 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5Y7NBCKHJP;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.binarybros.EtherealDimensionUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.binarybros.EtherealDimensionTests;
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = EtherealDimension;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EtherealDimension.app/EtherealDimension";
 			};
 			name = Debug;
-		};
-		CFB83A5F2B2D574A005A3B66 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5Y7NBCKHJP;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.binarybros.EtherealDimensionUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = EtherealDimension;
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CFB83A2C2B2D5749005A3B66 /* Build configuration list for PBXProject "EtherealDimension" */ = {
+		0B838790801A54C86363D88C /* Build configuration list for PBXNativeTarget "EtherealDimensionUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CFB83A552B2D574A005A3B66 /* Debug */,
-				CFB83A562B2D574A005A3B66 /* Release */,
+				0DD5CE8D3529F849C7B03408 /* Debug */,
+				AF9FD47ACAA2BF9FFDE9C2F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		CFB83A572B2D574A005A3B66 /* Build configuration list for PBXNativeTarget "EtherealDimension" */ = {
+		6417588BE9F0FC043A50ACF0 /* Build configuration list for PBXProject "EtherealDimension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CFB83A582B2D574A005A3B66 /* Debug */,
-				CFB83A592B2D574A005A3B66 /* Release */,
+				1D31A1B4CD2595DA5B261BBD /* Debug */,
+				87D950EBC0DA0A4763066323 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		CFB83A5A2B2D574A005A3B66 /* Build configuration list for PBXNativeTarget "EtherealDimensionTests" */ = {
+		8B4640323DBA5812339CCBA9 /* Build configuration list for PBXNativeTarget "EtherealDimensionTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CFB83A5B2B2D574A005A3B66 /* Debug */,
-				CFB83A5C2B2D574A005A3B66 /* Release */,
+				FE7BBEF9FAE0DDC10A174162 /* Debug */,
+				F534C0C2938EEA991333FED6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		CFB83A5D2B2D574A005A3B66 /* Build configuration list for PBXNativeTarget "EtherealDimensionUITests" */ = {
+		F7C4BECEE3CE8F5BAB0A0CEC /* Build configuration list for PBXNativeTarget "EtherealDimension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CFB83A5E2B2D574A005A3B66 /* Debug */,
-				CFB83A5F2B2D574A005A3B66 /* Release */,
+				EFE8E22C4E3EF4398778AA01 /* Debug */,
+				96632997222ADED3AFFC3BEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CFB83A292B2D5749005A3B66 /* Project object */;
+	rootObject = AE577E0DB6691CD380C7503E /* Project object */;
 }
