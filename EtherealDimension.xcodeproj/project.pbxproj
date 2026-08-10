@@ -13,11 +13,13 @@
 		4383DA6CB68AB86AFB194F2A /* SpaceTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F904E031EC84CF1690F726C /* SpaceTypes.swift */; };
 		4F491647C234926BCF90228E /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CB2DEFEFB97FF134487851 /* Haptics.swift */; };
 		4F845F84276518187A7AF8EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632C6194F5639A9DD73D67EF /* Assets.xcassets */; };
+		6EBFD62B4033AFE4F875602E /* RoomCaptureViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB0AA6840E66D02727F284 /* RoomCaptureViewRepresentable.swift */; };
 		7C973CC2615C086A11CB4F34 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D222F0A4CF1D86F6B9183D79 /* RootView.swift */; };
 		7D291BA94F5FCDBCC56F2CBC /* EtherealDimensionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15027ED139FD43E481B3899A /* EtherealDimensionUITests.swift */; };
 		C6929EC58585C7AB4A97DCC6 /* UnsupportedDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2434ABC63FC855981048A19 /* UnsupportedDeviceView.swift */; };
 		D1401356B2200FF871E3AAE0 /* EtherealDimensionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB326ABB8E8E00ECBEC1841 /* EtherealDimensionUITestsLaunchTests.swift */; };
 		EA0CC765DFD06F1F95E3C69B /* EtherealDimensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0782386F2F9811552052E535 /* EtherealDimensionTests.swift */; };
+		FA394E351F5B5489E8C52511 /* ScanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8624ED2D733F617ED7ABCC /* ScanModel.swift */; };
 		FAB3E49EBCB4E56F464543CA /* HyliosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8091B39324A4356EC84A26 /* HyliosApp.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +46,8 @@
 		2D2C48F8ECEE1EECF931F161 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
 		2F1B69A664B2C812FB6630C1 /* EtherealDimensionUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = EtherealDimensionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B8091B39324A4356EC84A26 /* HyliosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyliosApp.swift; sourceTree = "<group>"; };
+		3FBB0AA6840E66D02727F284 /* RoomCaptureViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCaptureViewRepresentable.swift; sourceTree = "<group>"; };
+		4B8624ED2D733F617ED7ABCC /* ScanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanModel.swift; sourceTree = "<group>"; };
 		60B3E06AA77F90C123BA72C8 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		62CB2DEFEFB97FF134487851 /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
 		632C6194F5639A9DD73D67EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 		7F225335C2925691BDA7572D /* Scan */ = {
 			isa = PBXGroup;
 			children = (
+				3FBB0AA6840E66D02727F284 /* RoomCaptureViewRepresentable.swift */,
+				4B8624ED2D733F617ED7ABCC /* ScanModel.swift */,
 				2D2C48F8ECEE1EECF931F161 /* ScanView.swift */,
 			);
 			path = Scan;
@@ -304,7 +310,9 @@
 				FAB3E49EBCB4E56F464543CA /* HyliosApp.swift in Sources */,
 				12EEA17EB8632404515D1441 /* Logger.swift in Sources */,
 				0394C0AE67DAB029DEC0B3E4 /* MeshBackground.swift in Sources */,
+				6EBFD62B4033AFE4F875602E /* RoomCaptureViewRepresentable.swift in Sources */,
 				7C973CC2615C086A11CB4F34 /* RootView.swift in Sources */,
+				FA394E351F5B5489E8C52511 /* ScanModel.swift in Sources */,
 				30CBB6CBA4F9A1CD316E7436 /* ScanView.swift in Sources */,
 				4383DA6CB68AB86AFB194F2A /* SpaceTypes.swift in Sources */,
 				C6929EC58585C7AB4A97DCC6 /* UnsupportedDeviceView.swift in Sources */,
