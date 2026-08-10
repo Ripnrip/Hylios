@@ -119,6 +119,7 @@
 		6A6C4F1BDC1810A76AB178ED /* MeshBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshBackground.swift; sourceTree = "<group>"; };
 		6DB326ABB8E8E00ECBEC1841 /* EtherealDimensionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherealDimensionUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6FA22FF5FDF1DA52F6E253CA /* HyliosScanActivity.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = HyliosScanActivity.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		95C003AB2A012E6F666E4024 /* HyliosClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HyliosClip.entitlements; sourceTree = "<group>"; };
 		9F904E031EC84CF1690F726C /* SpaceTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceTypes.swift; sourceTree = "<group>"; };
 		B90393CE8D0580E56C031A0A /* ScanLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanLiveActivity.swift; sourceTree = "<group>"; };
 		C0E81AC4B1FCECD524F5B630 /* EtherealDimension.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = EtherealDimension.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,6 +186,7 @@
 		780C9476D339824C967CE677 /* AppClip */ = {
 			isa = PBXGroup;
 			children = (
+				95C003AB2A012E6F666E4024 /* HyliosClip.entitlements */,
 				24473C4F2DDC59978F935383 /* HyliosClipApp.swift */,
 				C7F9833632255AECA09F3501 /* Info.plist */,
 			);
@@ -783,6 +785,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AppClip/HyliosClip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5Y7NBCKHJP;
 				INFOPLIST_FILE = AppClip/Info.plist;
@@ -818,6 +821,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AppClip/HyliosClip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5Y7NBCKHJP;
 				INFOPLIST_FILE = AppClip/Info.plist;

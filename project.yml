@@ -93,6 +93,7 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.binarybros.EtherealDimension.Clip
+        CODE_SIGN_ENTITLEMENTS: AppClip/HyliosClip.entitlements
         CODE_SIGN_STYLE: Automatic
         DEVELOPMENT_TEAM: 5Y7NBCKHJP
         TARGETED_DEVICE_FAMILY: "1,2"
