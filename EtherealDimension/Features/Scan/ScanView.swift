@@ -77,6 +77,7 @@ private struct ScanLiveView: View {
     var body: some View {
         RoomCaptureViewRepresentable(model: model)
             .ignoresSafeArea()
+            .overlay(ScanBeamOverlay()) // 🔵 the sweeping gaze over the live lens
         VStack {
             Spacer()
             Text("Move slowly around the room")
@@ -111,6 +112,7 @@ private struct ScanProcessingView: View {
             Text("Crystallizing your space…")
                 .font(.headline)
                 .foregroundStyle(.white)
+                .shimmering() // ✨ liquid light while the geometry weaves
             Text("Hylios is weaving the geometry.")
                 .font(.subheadline)
                 .foregroundStyle(.white.opacity(0.7))

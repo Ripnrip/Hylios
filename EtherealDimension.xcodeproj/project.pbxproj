@@ -16,9 +16,11 @@
 		6EBFD62B4033AFE4F875602E /* RoomCaptureViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB0AA6840E66D02727F284 /* RoomCaptureViewRepresentable.swift */; };
 		7C973CC2615C086A11CB4F34 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D222F0A4CF1D86F6B9183D79 /* RootView.swift */; };
 		7D291BA94F5FCDBCC56F2CBC /* EtherealDimensionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15027ED139FD43E481B3899A /* EtherealDimensionUITests.swift */; };
+		9F065903036936C369EBEC63 /* Shimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F19AE5463EF5B4AB7EE81A /* Shimmer.swift */; };
 		C6929EC58585C7AB4A97DCC6 /* UnsupportedDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2434ABC63FC855981048A19 /* UnsupportedDeviceView.swift */; };
 		D1401356B2200FF871E3AAE0 /* EtherealDimensionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB326ABB8E8E00ECBEC1841 /* EtherealDimensionUITestsLaunchTests.swift */; };
 		EA0CC765DFD06F1F95E3C69B /* EtherealDimensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0782386F2F9811552052E535 /* EtherealDimensionTests.swift */; };
+		ED82AC2E14D6C273142906CE /* ScanBeamOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F979D8B0F108AFC7364BF274 /* ScanBeamOverlay.swift */; };
 		FA394E351F5B5489E8C52511 /* ScanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8624ED2D733F617ED7ABCC /* ScanModel.swift */; };
 		FAB3E49EBCB4E56F464543CA /* HyliosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8091B39324A4356EC84A26 /* HyliosApp.swift */; };
 /* End PBXBuildFile section */
@@ -58,6 +60,8 @@
 		C2434ABC63FC855981048A19 /* UnsupportedDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsupportedDeviceView.swift; sourceTree = "<group>"; };
 		D222F0A4CF1D86F6B9183D79 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		F13A94B81ED57D208428B155 /* EtherealDimensionTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = EtherealDimensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2F19AE5463EF5B4AB7EE81A /* Shimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shimmer.swift; sourceTree = "<group>"; };
+		F979D8B0F108AFC7364BF274 /* ScanBeamOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanBeamOverlay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -68,6 +72,15 @@
 				7F225335C2925691BDA7572D /* Scan */,
 			);
 			path = Features;
+			sourceTree = "<group>";
+		};
+		0750FE2CC9CA20D4C0A2B90F /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				F979D8B0F108AFC7364BF274 /* ScanBeamOverlay.swift */,
+				F2F19AE5463EF5B4AB7EE81A /* Shimmer.swift */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 		132C1DA3B456D01DE3E0E55C = {
@@ -128,6 +141,7 @@
 		A128011B3429C05C5E369359 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				0750FE2CC9CA20D4C0A2B90F /* Animations */,
 				975E4D0B2459A7FA317CCA7B /* Brand */,
 			);
 			path = UI;
@@ -312,8 +326,10 @@
 				0394C0AE67DAB029DEC0B3E4 /* MeshBackground.swift in Sources */,
 				6EBFD62B4033AFE4F875602E /* RoomCaptureViewRepresentable.swift in Sources */,
 				7C973CC2615C086A11CB4F34 /* RootView.swift in Sources */,
+				ED82AC2E14D6C273142906CE /* ScanBeamOverlay.swift in Sources */,
 				FA394E351F5B5489E8C52511 /* ScanModel.swift in Sources */,
 				30CBB6CBA4F9A1CD316E7436 /* ScanView.swift in Sources */,
+				9F065903036936C369EBEC63 /* Shimmer.swift in Sources */,
 				4383DA6CB68AB86AFB194F2A /* SpaceTypes.swift in Sources */,
 				C6929EC58585C7AB4A97DCC6 /* UnsupportedDeviceView.swift in Sources */,
 			);
