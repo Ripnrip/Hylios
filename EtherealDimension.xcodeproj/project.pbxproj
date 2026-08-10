@@ -10,6 +10,7 @@
 		0394C0AE67DAB029DEC0B3E4 /* MeshBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6C4F1BDC1810A76AB178ED /* MeshBackground.swift */; };
 		12EEA17EB8632404515D1441 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E06AA77F90C123BA72C8 /* Logger.swift */; };
 		30CBB6CBA4F9A1CD316E7436 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2C48F8ECEE1EECF931F161 /* ScanView.swift */; };
+		42348D71D1B8F540FDF0DEAE /* SuccessCelebration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1200FA2F8059517B4D046BBA /* SuccessCelebration.swift */; };
 		4383DA6CB68AB86AFB194F2A /* SpaceTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F904E031EC84CF1690F726C /* SpaceTypes.swift */; };
 		4F491647C234926BCF90228E /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CB2DEFEFB97FF134487851 /* Haptics.swift */; };
 		4F845F84276518187A7AF8EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632C6194F5639A9DD73D67EF /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		0782386F2F9811552052E535 /* EtherealDimensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherealDimensionTests.swift; sourceTree = "<group>"; };
+		1200FA2F8059517B4D046BBA /* SuccessCelebration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessCelebration.swift; sourceTree = "<group>"; };
 		15027ED139FD43E481B3899A /* EtherealDimensionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherealDimensionUITests.swift; sourceTree = "<group>"; };
 		2D2C48F8ECEE1EECF931F161 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
 		2F1B69A664B2C812FB6630C1 /* EtherealDimensionUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = EtherealDimensionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +81,7 @@
 			children = (
 				F979D8B0F108AFC7364BF274 /* ScanBeamOverlay.swift */,
 				F2F19AE5463EF5B4AB7EE81A /* Shimmer.swift */,
+				1200FA2F8059517B4D046BBA /* SuccessCelebration.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				30CBB6CBA4F9A1CD316E7436 /* ScanView.swift in Sources */,
 				9F065903036936C369EBEC63 /* Shimmer.swift in Sources */,
 				4383DA6CB68AB86AFB194F2A /* SpaceTypes.swift in Sources */,
+				42348D71D1B8F540FDF0DEAE /* SuccessCelebration.swift in Sources */,
 				C6929EC58585C7AB4A97DCC6 /* UnsupportedDeviceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -125,12 +125,17 @@ private struct ScanDoneView: View {
     let fileURL: URL
     let sizeBytes: Int64
     let onRescan: () -> Void
+    @State private var animateSeal = false
     var body: some View {
         VStack(spacing: 20) {
             Spacer()
             Image(systemName: "checkmark.seal.fill")
                 .font(.system(size: 64))
                 .foregroundStyle(.green)
+                .overlay(SuccessCelebration()) // 🌟 the radiant bloom
+                .scaleEffect(animateSeal ? 1.0 : 0.4)
+                .animation(.bouncy, value: animateSeal)
+                .onAppear { animateSeal = true }
             Text("Scan complete")
                 .font(.title.weight(.bold))
                 .foregroundStyle(.white)
