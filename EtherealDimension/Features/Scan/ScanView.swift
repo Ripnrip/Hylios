@@ -10,14 +10,25 @@ import SwiftUI
 /// The room where the scan happens. It reacts to `ScanModel.phase`:
 /// idle invites, scanning shows the live lens + a Finish button, processing
 /// shows the alchemy, done reveals the crystallized USDZ to share.
-struct ScanView: View {
+struct RoomScanView: View {
     @State private var model = ScanModel()
+    var onExit: () -> Void = {}
 
     var body: some View {
         ZStack {
             MeshBackground()
             content
                 .animation(.snappy, value: model.phase)
+        }
+        .overlay(alignment: .topLeading) {
+            if model.phase == .idle {
+                Button(action: onExit) {
+                    Image(systemName: "xmark.circle.fill")
+                        .font(.title2)
+                        .foregroundStyle(.white.opacity(0.7))
+                        .padding()
+                }
+            }
         }
     }
 
@@ -187,5 +198,5 @@ private struct ScanFailedView: View {
 }
 
 #Preview {
-    ScanView()
+    RoomScanView(onExit: {})
 }

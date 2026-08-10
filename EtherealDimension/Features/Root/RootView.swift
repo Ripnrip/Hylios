@@ -15,7 +15,7 @@ struct RootView: View {
     var body: some View {
         Group {
             if RoomCaptureSession.isSupported {
-                ScanView() // 🔮 Phase 4 awakens the real RoomCaptureView here.
+                ScanHub() // 🧭 the mode chooser (room scan | object capture)
             } else {
                 UnsupportedDeviceView()
             }

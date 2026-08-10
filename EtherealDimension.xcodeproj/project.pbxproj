@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0394C0AE67DAB029DEC0B3E4 /* MeshBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6C4F1BDC1810A76AB178ED /* MeshBackground.swift */; };
+		069A65C034761E51E264E6B7 /* ScanMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD61890D1A5DA31FA248206F /* ScanMode.swift */; };
 		07AF93E50AFD911BA42AB28F /* RoomCaptureViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB0AA6840E66D02727F284 /* RoomCaptureViewRepresentable.swift */; };
 		0DD76F465316F7B32E5B51DF /* SuccessCelebration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1200FA2F8059517B4D046BBA /* SuccessCelebration.swift */; };
 		12EEA17EB8632404515D1441 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E06AA77F90C123BA72C8 /* Logger.swift */; };
+		1DA94674BDC1CE12F9ED4214 /* ScanHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5999F753AB3033458B3539E8 /* ScanHub.swift */; };
 		30CBB6CBA4F9A1CD316E7436 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2C48F8ECEE1EECF931F161 /* ScanView.swift */; };
+		3A65B0CEC3A1D8239FAACDDD /* ObjectScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911EBEC2B33ADFD383A6A714 /* ObjectScanView.swift */; };
 		3E0288906A262E644E829F1A /* ScanActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB40E7A45689AC4A094F462 /* ScanActivityAttributes.swift */; };
 		3F93ECABC0107C1CD5A30C0B /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D222F0A4CF1D86F6B9183D79 /* RootView.swift */; };
 		42348D71D1B8F540FDF0DEAE /* SuccessCelebration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1200FA2F8059517B4D046BBA /* SuccessCelebration.swift */; };
@@ -29,6 +32,7 @@
 		9B8B4D65EABDA5B3D4B8CA9D /* ScanActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB40E7A45689AC4A094F462 /* ScanActivityAttributes.swift */; };
 		9F065903036936C369EBEC63 /* Shimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F19AE5463EF5B4AB7EE81A /* Shimmer.swift */; };
 		A4B22B736743292CE456BF1B /* Shimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F19AE5463EF5B4AB7EE81A /* Shimmer.swift */; };
+		B5D6ACC2ECA4D42551CDA995 /* ObjectScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911EBEC2B33ADFD383A6A714 /* ObjectScanView.swift */; };
 		B7F7F996C9A29A50C57C68A6 /* ScanBeamOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F979D8B0F108AFC7364BF274 /* ScanBeamOverlay.swift */; };
 		BA2DAE8704A50E921BEB826F /* ScanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8624ED2D733F617ED7ABCC /* ScanModel.swift */; };
 		C6929EC58585C7AB4A97DCC6 /* UnsupportedDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2434ABC63FC855981048A19 /* UnsupportedDeviceView.swift */; };
@@ -37,7 +41,9 @@
 		DB1E39450920C9D2B102D66F /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CB2DEFEFB97FF134487851 /* Haptics.swift */; };
 		DD475BC7D32B080AD76982EA /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E06AA77F90C123BA72C8 /* Logger.swift */; };
 		E3083BEE3849285FD57286EB /* HyliosScanActivity.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6FA22FF5FDF1DA52F6E253CA /* HyliosScanActivity.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E34BF35BE4AA9B4A0ADD5809 /* ScanMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD61890D1A5DA31FA248206F /* ScanMode.swift */; };
 		EA0CC765DFD06F1F95E3C69B /* EtherealDimensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0782386F2F9811552052E535 /* EtherealDimensionTests.swift */; };
+		EB3006B0082F9C71D75648F1 /* ScanHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5999F753AB3033458B3539E8 /* ScanHub.swift */; };
 		ED82AC2E14D6C273142906CE /* ScanBeamOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F979D8B0F108AFC7364BF274 /* ScanBeamOverlay.swift */; };
 		F0523107227173BBED692EC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632C6194F5639A9DD73D67EF /* Assets.xcassets */; };
 		F44198BFC8B28E5508C03DB9 /* ScanActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB40E7A45689AC4A094F462 /* ScanActivityAttributes.swift */; };
@@ -113,12 +119,14 @@
 		3B8091B39324A4356EC84A26 /* HyliosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyliosApp.swift; sourceTree = "<group>"; };
 		3FBB0AA6840E66D02727F284 /* RoomCaptureViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCaptureViewRepresentable.swift; sourceTree = "<group>"; };
 		4B8624ED2D733F617ED7ABCC /* ScanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanModel.swift; sourceTree = "<group>"; };
+		5999F753AB3033458B3539E8 /* ScanHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanHub.swift; sourceTree = "<group>"; };
 		60B3E06AA77F90C123BA72C8 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		62CB2DEFEFB97FF134487851 /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
 		632C6194F5639A9DD73D67EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A6C4F1BDC1810A76AB178ED /* MeshBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshBackground.swift; sourceTree = "<group>"; };
 		6DB326ABB8E8E00ECBEC1841 /* EtherealDimensionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherealDimensionUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6FA22FF5FDF1DA52F6E253CA /* HyliosScanActivity.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = HyliosScanActivity.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		911EBEC2B33ADFD383A6A714 /* ObjectScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectScanView.swift; sourceTree = "<group>"; };
 		95C003AB2A012E6F666E4024 /* HyliosClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HyliosClip.entitlements; sourceTree = "<group>"; };
 		9F904E031EC84CF1690F726C /* SpaceTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceTypes.swift; sourceTree = "<group>"; };
 		B90393CE8D0580E56C031A0A /* ScanLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanLiveActivity.swift; sourceTree = "<group>"; };
@@ -131,12 +139,14 @@
 		F13A94B81ED57D208428B155 /* EtherealDimensionTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = EtherealDimensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2F19AE5463EF5B4AB7EE81A /* Shimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shimmer.swift; sourceTree = "<group>"; };
 		F979D8B0F108AFC7364BF274 /* ScanBeamOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanBeamOverlay.swift; sourceTree = "<group>"; };
+		FD61890D1A5DA31FA248206F /* ScanMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanMode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		0381A8D61F157566577B0FEA /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				267B6CAD00AC52F64A040E8E /* ObjectCapture */,
 				F71420C49B3402B99DC56BFF /* Root */,
 				7F225335C2925691BDA7572D /* Scan */,
 			);
@@ -163,6 +173,14 @@
 				4693CE34738712A4FFE4B0EA /* ScanActivity */,
 				A4FC71AF43C275370D1DA5BF /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		267B6CAD00AC52F64A040E8E /* ObjectCapture */ = {
+			isa = PBXGroup;
+			children = (
+				911EBEC2B33ADFD383A6A714 /* ObjectScanView.swift */,
+			);
+			path = ObjectCapture;
 			sourceTree = "<group>";
 		};
 		4693CE34738712A4FFE4B0EA /* ScanActivity */ = {
@@ -197,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				3FBB0AA6840E66D02727F284 /* RoomCaptureViewRepresentable.swift */,
+				5999F753AB3033458B3539E8 /* ScanHub.swift */,
 				4B8624ED2D733F617ED7ABCC /* ScanModel.swift */,
 				2D2C48F8ECEE1EECF931F161 /* ScanView.swift */,
 			);
@@ -266,6 +285,7 @@
 		C37454FC18D37308FF9AF441 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FD61890D1A5DA31FA248206F /* ScanMode.swift */,
 				9F904E031EC84CF1690F726C /* SpaceTypes.swift */,
 			);
 			path = Models;
@@ -475,10 +495,13 @@
 				FAB3E49EBCB4E56F464543CA /* HyliosApp.swift in Sources */,
 				12EEA17EB8632404515D1441 /* Logger.swift in Sources */,
 				0394C0AE67DAB029DEC0B3E4 /* MeshBackground.swift in Sources */,
+				B5D6ACC2ECA4D42551CDA995 /* ObjectScanView.swift in Sources */,
 				6EBFD62B4033AFE4F875602E /* RoomCaptureViewRepresentable.swift in Sources */,
 				7C973CC2615C086A11CB4F34 /* RootView.swift in Sources */,
 				3E0288906A262E644E829F1A /* ScanActivityAttributes.swift in Sources */,
 				ED82AC2E14D6C273142906CE /* ScanBeamOverlay.swift in Sources */,
+				1DA94674BDC1CE12F9ED4214 /* ScanHub.swift in Sources */,
+				E34BF35BE4AA9B4A0ADD5809 /* ScanMode.swift in Sources */,
 				FA394E351F5B5489E8C52511 /* ScanModel.swift in Sources */,
 				30CBB6CBA4F9A1CD316E7436 /* ScanView.swift in Sources */,
 				9F065903036936C369EBEC63 /* Shimmer.swift in Sources */,
@@ -496,10 +519,13 @@
 				733808AF493AB7AB6C33F473 /* HyliosClipApp.swift in Sources */,
 				DD475BC7D32B080AD76982EA /* Logger.swift in Sources */,
 				C841A471C2B20FF8D673E82F /* MeshBackground.swift in Sources */,
+				3A65B0CEC3A1D8239FAACDDD /* ObjectScanView.swift in Sources */,
 				07AF93E50AFD911BA42AB28F /* RoomCaptureViewRepresentable.swift in Sources */,
 				3F93ECABC0107C1CD5A30C0B /* RootView.swift in Sources */,
 				9B8B4D65EABDA5B3D4B8CA9D /* ScanActivityAttributes.swift in Sources */,
 				B7F7F996C9A29A50C57C68A6 /* ScanBeamOverlay.swift in Sources */,
+				EB3006B0082F9C71D75648F1 /* ScanHub.swift in Sources */,
+				069A65C034761E51E264E6B7 /* ScanMode.swift in Sources */,
 				BA2DAE8704A50E921BEB826F /* ScanModel.swift in Sources */,
 				7CD99E7898464145870C3492 /* ScanView.swift in Sources */,
 				A4B22B736743292CE456BF1B /* Shimmer.swift in Sources */,
