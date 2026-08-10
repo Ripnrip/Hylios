@@ -10,8 +10,10 @@
 		0394C0AE67DAB029DEC0B3E4 /* MeshBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6C4F1BDC1810A76AB178ED /* MeshBackground.swift */; };
 		12EEA17EB8632404515D1441 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3E06AA77F90C123BA72C8 /* Logger.swift */; };
 		30CBB6CBA4F9A1CD316E7436 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2C48F8ECEE1EECF931F161 /* ScanView.swift */; };
+		3E0288906A262E644E829F1A /* ScanActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB40E7A45689AC4A094F462 /* ScanActivityAttributes.swift */; };
 		42348D71D1B8F540FDF0DEAE /* SuccessCelebration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1200FA2F8059517B4D046BBA /* SuccessCelebration.swift */; };
 		4383DA6CB68AB86AFB194F2A /* SpaceTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F904E031EC84CF1690F726C /* SpaceTypes.swift */; };
+		47A1661E5A6AE255BEF51DAF /* ScanLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90393CE8D0580E56C031A0A /* ScanLiveActivity.swift */; };
 		4F491647C234926BCF90228E /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CB2DEFEFB97FF134487851 /* Haptics.swift */; };
 		4F845F84276518187A7AF8EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632C6194F5639A9DD73D67EF /* Assets.xcassets */; };
 		6EBFD62B4033AFE4F875602E /* RoomCaptureViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB0AA6840E66D02727F284 /* RoomCaptureViewRepresentable.swift */; };
@@ -20,8 +22,10 @@
 		9F065903036936C369EBEC63 /* Shimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F19AE5463EF5B4AB7EE81A /* Shimmer.swift */; };
 		C6929EC58585C7AB4A97DCC6 /* UnsupportedDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2434ABC63FC855981048A19 /* UnsupportedDeviceView.swift */; };
 		D1401356B2200FF871E3AAE0 /* EtherealDimensionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB326ABB8E8E00ECBEC1841 /* EtherealDimensionUITestsLaunchTests.swift */; };
+		E3083BEE3849285FD57286EB /* HyliosScanActivity.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6FA22FF5FDF1DA52F6E253CA /* HyliosScanActivity.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EA0CC765DFD06F1F95E3C69B /* EtherealDimensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0782386F2F9811552052E535 /* EtherealDimensionTests.swift */; };
 		ED82AC2E14D6C273142906CE /* ScanBeamOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F979D8B0F108AFC7364BF274 /* ScanBeamOverlay.swift */; };
+		F44198BFC8B28E5508C03DB9 /* ScanActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB40E7A45689AC4A094F462 /* ScanActivityAttributes.swift */; };
 		FA394E351F5B5489E8C52511 /* ScanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8624ED2D733F617ED7ABCC /* ScanModel.swift */; };
 		FAB3E49EBCB4E56F464543CA /* HyliosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8091B39324A4356EC84A26 /* HyliosApp.swift */; };
 /* End PBXBuildFile section */
@@ -41,10 +45,32 @@
 			remoteGlobalIDString = A8721291EDE1C54DD59E211C;
 			remoteInfo = EtherealDimension;
 		};
+		DED499480D883C1F6032FD71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE577E0DB6691CD380C7503E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BD190C8FF4A7FE79FBC0CA7;
+			remoteInfo = HyliosScanActivity;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		57D7433BC6FBAB10C59C3755 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E3083BEE3849285FD57286EB /* HyliosScanActivity.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0782386F2F9811552052E535 /* EtherealDimensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherealDimensionTests.swift; sourceTree = "<group>"; };
+		0FCC9B33AE9F5D6FA270C16B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1200FA2F8059517B4D046BBA /* SuccessCelebration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessCelebration.swift; sourceTree = "<group>"; };
 		15027ED139FD43E481B3899A /* EtherealDimensionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherealDimensionUITests.swift; sourceTree = "<group>"; };
 		2D2C48F8ECEE1EECF931F161 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
@@ -57,9 +83,12 @@
 		632C6194F5639A9DD73D67EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A6C4F1BDC1810A76AB178ED /* MeshBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshBackground.swift; sourceTree = "<group>"; };
 		6DB326ABB8E8E00ECBEC1841 /* EtherealDimensionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherealDimensionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6FA22FF5FDF1DA52F6E253CA /* HyliosScanActivity.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = HyliosScanActivity.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F904E031EC84CF1690F726C /* SpaceTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceTypes.swift; sourceTree = "<group>"; };
+		B90393CE8D0580E56C031A0A /* ScanLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanLiveActivity.swift; sourceTree = "<group>"; };
 		C0E81AC4B1FCECD524F5B630 /* EtherealDimension.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = EtherealDimension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2434ABC63FC855981048A19 /* UnsupportedDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsupportedDeviceView.swift; sourceTree = "<group>"; };
+		CBB40E7A45689AC4A094F462 /* ScanActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanActivityAttributes.swift; sourceTree = "<group>"; };
 		D222F0A4CF1D86F6B9183D79 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		F13A94B81ED57D208428B155 /* EtherealDimensionTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = EtherealDimensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2F19AE5463EF5B4AB7EE81A /* Shimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shimmer.swift; sourceTree = "<group>"; };
@@ -92,8 +121,19 @@
 				BFF0569AF87244DAB0B9C062 /* EtherealDimension */,
 				49CD1C8190F55A2501B2D116 /* EtherealDimensionTests */,
 				81BE7A8B13E8AC7855DB3C34 /* EtherealDimensionUITests */,
+				4693CE34738712A4FFE4B0EA /* ScanActivity */,
 				A4FC71AF43C275370D1DA5BF /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		4693CE34738712A4FFE4B0EA /* ScanActivity */ = {
+			isa = PBXGroup;
+			children = (
+				0FCC9B33AE9F5D6FA270C16B /* Info.plist */,
+				CBB40E7A45689AC4A094F462 /* ScanActivityAttributes.swift */,
+				B90393CE8D0580E56C031A0A /* ScanLiveActivity.swift */,
+			);
+			path = ScanActivity;
 			sourceTree = "<group>";
 		};
 		49CD1C8190F55A2501B2D116 /* EtherealDimensionTests */ = {
@@ -156,6 +196,7 @@
 				C0E81AC4B1FCECD524F5B630 /* EtherealDimension.app */,
 				F13A94B81ED57D208428B155 /* EtherealDimensionTests.xctest */,
 				2F1B69A664B2C812FB6630C1 /* EtherealDimensionUITests.xctest */,
+				6FA22FF5FDF1DA52F6E253CA /* HyliosScanActivity.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -208,6 +249,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1BD190C8FF4A7FE79FBC0CA7 /* HyliosScanActivity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71501E05494592E6C32829BE /* Build configuration list for PBXNativeTarget "HyliosScanActivity" */;
+			buildPhases = (
+				C3A695BE7023356CCC0DF37E /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HyliosScanActivity;
+			packageProductDependencies = (
+			);
+			productName = HyliosScanActivity;
+			productReference = 6FA22FF5FDF1DA52F6E253CA /* HyliosScanActivity.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		484CFB6A4CADAAAF7554F922 /* EtherealDimensionUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B838790801A54C86363D88C /* Build configuration list for PBXNativeTarget "EtherealDimensionUITests" */;
@@ -250,10 +308,12 @@
 			buildPhases = (
 				19E445268415476C7C8AD813 /* Sources */,
 				DFFCB7720400C7471FB41813 /* Resources */,
+				57D7433BC6FBAB10C59C3755 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C4A16C7EE1CF2729FD33340F /* PBXTargetDependency */,
 			);
 			name = EtherealDimension;
 			packageProductDependencies = (
@@ -271,6 +331,10 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					1BD190C8FF4A7FE79FBC0CA7 = {
+						DevelopmentTeam = 5Y7NBCKHJP;
+						ProvisioningStyle = Automatic;
+					};
 					484CFB6A4CADAAAF7554F922 = {
 						DevelopmentTeam = 5Y7NBCKHJP;
 						ProvisioningStyle = Automatic;
@@ -303,6 +367,7 @@
 				A8721291EDE1C54DD59E211C /* EtherealDimension */,
 				51988EEC35C4EF4ED4A84DDF /* EtherealDimensionTests */,
 				484CFB6A4CADAAAF7554F922 /* EtherealDimensionUITests */,
+				1BD190C8FF4A7FE79FBC0CA7 /* HyliosScanActivity */,
 			);
 		};
 /* End PBXProject section */
@@ -329,6 +394,7 @@
 				0394C0AE67DAB029DEC0B3E4 /* MeshBackground.swift in Sources */,
 				6EBFD62B4033AFE4F875602E /* RoomCaptureViewRepresentable.swift in Sources */,
 				7C973CC2615C086A11CB4F34 /* RootView.swift in Sources */,
+				3E0288906A262E644E829F1A /* ScanActivityAttributes.swift in Sources */,
 				ED82AC2E14D6C273142906CE /* ScanBeamOverlay.swift in Sources */,
 				FA394E351F5B5489E8C52511 /* ScanModel.swift in Sources */,
 				30CBB6CBA4F9A1CD316E7436 /* ScanView.swift in Sources */,
@@ -356,6 +422,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C3A695BE7023356CCC0DF37E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44198BFC8B28E5508C03DB9 /* ScanActivityAttributes.swift in Sources */,
+				47A1661E5A6AE255BEF51DAF /* ScanLiveActivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -368,6 +443,11 @@
 			isa = PBXTargetDependency;
 			target = A8721291EDE1C54DD59E211C /* EtherealDimension */;
 			targetProxy = B62A637BB8BF4420F7793093 /* PBXContainerItemProxy */;
+		};
+		C4A16C7EE1CF2729FD33340F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BD190C8FF4A7FE79FBC0CA7 /* HyliosScanActivity */;
+			targetProxy = DED499480D883C1F6032FD71 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -537,6 +617,25 @@
 			};
 			name = Release;
 		};
+		A9BB70BF171F824141671732 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5Y7NBCKHJP;
+				INFOPLIST_FILE = ScanActivity/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.binarybros.EtherealDimension.ScanActivity;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		AF9FD47ACAA2BF9FFDE9C2F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -551,6 +650,25 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = EtherealDimension;
+			};
+			name = Release;
+		};
+		DA15FE6BC7FD6F1C6FA09095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5Y7NBCKHJP;
+				INFOPLIST_FILE = ScanActivity/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.binarybros.EtherealDimension.ScanActivity;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -622,6 +740,15 @@
 			buildConfigurations = (
 				1D31A1B4CD2595DA5B261BBD /* Debug */,
 				87D950EBC0DA0A4763066323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		71501E05494592E6C32829BE /* Build configuration list for PBXNativeTarget "HyliosScanActivity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9BB70BF171F824141671732 /* Debug */,
+				DA15FE6BC7FD6F1C6FA09095 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

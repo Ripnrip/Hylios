@@ -35,18 +35,42 @@ targets:
           - "LaunchScreen.storyboard"
           - "Info.plist"
           - "art.scnassets"
+      - ScanActivity/ScanActivityAttributes.swift
+    dependencies:
+      - target: HyliosScanActivity
+        embed: true
     info:
       path: EtherealDimension/Info.plist
       properties:
         CFBundleDisplayName: Hylios
         NSCameraUsageDescription: "Hylios uses the camera to scan your space into a 3D model."
         UILaunchScreen: {}
+        NSSupportsLiveActivities: true
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.binarybros.EtherealDimension
         TARGETED_DEVICE_FAMILY: "1,2"
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ENABLE_PREVIEWS: "YES"
+  HyliosScanActivity:
+    type: app-extension
+    platform: iOS
+    sources:
+      - ScanActivity
+    info:
+      path: ScanActivity/Info.plist
+      properties:
+        CFBundleDisplayName: Hylios Scan
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.binarybros.EtherealDimension.ScanActivity
+        SKIP_INSTALL: "YES"
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: 5Y7NBCKHJP
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SWIFT_VERSION: "6.0"
   EtherealDimensionTests:
     type: bundle.unit-test
     platform: iOS

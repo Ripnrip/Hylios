@@ -3,6 +3,7 @@
 //  Hylios
 //
 
+import ActivityKit
 import Foundation
 import OSLog
 import RoomPlan
@@ -12,10 +13,8 @@ import UIKit
 ///
 /// The beating heart of the scan: an `@Observable` state machine that conjures
 /// geometry out of thin air.  `idle → scanning → processing → done` (or `failed`).
-/// Owns the `RoomCaptureSession`, the final `CapturedRoom`, and the exported USDZ.
-///
-/// Pure model — the Objc RoomPlan delegates live in `RoomCaptureViewRepresentable.Coordinator`,
-/// which keeps `@Observable` out of the `@objc` protocol weeds.
+/// Owns the `RoomCaptureSession`, the final `CapturedRoom`, the exported USDZ,
+/// and the Live Activity that broadcasts progress to the Lock Screen + Dynamic Island.
 @MainActor
 @Observable
 final class ScanModel {
@@ -38,10 +37,11 @@ final class ScanModel {
     /// 📏 The crystal's weight (bytes) — a touch of mortal detail.
     var exportedFileSize: Int64 = 0
 
-    /// 🔮 The lens itself, and the session that drives it.
+    /// 🔮 The lens itself, the session that drives it, and the live broadcast.
     private var captureView: RoomCaptureView?
     private let sessionConfig = RoomCaptureSession.Configuration()
     private var capturedRoom: CapturedRoom?
+    private var activity: Activity<ScanActivityAttributes>?
 
     // MARK: - The ritual 🪄
 
@@ -51,6 +51,7 @@ final class ScanModel {
         phase = .scanning
         view.captureSession.run(configuration: sessionConfig)
         Haptic.medium.play()
+        startActivity()
         Logger.scan.info("🌙 Scan awakens.")
     }
 
@@ -60,6 +61,7 @@ final class ScanModel {
         phase = .processing
         captureView?.captureSession.stop()
         Haptic.light.play()
+        updateActivity("Crystallizing…", progress: 0.5)
         Logger.scan.info("🌙 Scan stopped; weaving the model…")
     }
 
@@ -77,6 +79,7 @@ final class ScanModel {
             Logger.scan.error("💥 RoomPlan error: \(error.localizedDescription)")
             phase = .failed(error.localizedDescription)
             Haptic.error.play()
+            endActivity("Failed")
             return
         }
         export(room)
@@ -99,11 +102,47 @@ final class ScanModel {
             exportedFileSize = size
             phase = .done
             Haptic.success.play()
+            endActivity("Saved")
             Logger.scan.info("💎 Crystallized USDZ (\(size) bytes) → \(url.path)")
         } catch {
             Logger.scan.error("💥 Export failed: \(error.localizedDescription)")
             phase = .failed(error.localizedDescription)
             Haptic.error.play()
+            endActivity("Failed")
         }
+    }
+
+    // MARK: - Live Activity 📡 (Lock Screen + Dynamic Island)
+
+    /// 🌅 Begin broadcasting the scan to the Lock Screen + Dynamic Island.
+    private func startActivity() {
+        guard ActivityAuthorizationInfo().areActivitiesEnabled else { return }
+        let attributes = ScanActivityAttributes(spaceName: "your space")
+        let state = ScanActivityAttributes.ContentState(phaseLabel: "Scanning", progress: 0)
+        do {
+            activity = try Activity.request(
+                attributes: attributes,
+                content: .init(state: state, staleDate: nil),
+                pushType: nil
+            )
+            Logger.scan.info("📡 Live Activity started.")
+        } catch {
+            Logger.scan.error("📡 Live Activity start failed: \(error.localizedDescription)")
+        }
+    }
+
+    /// 🔁 Update the broadcast (called from sync entry points; spawns the async hop).
+    private func updateActivity(_ label: String, progress: Double) {
+        guard let activity else { return }
+        let next = ScanActivityAttributes.ContentState(phaseLabel: label, progress: progress)
+        Task { await activity.update(.init(state: next, staleDate: nil)) }
+    }
+
+    /// 🌇 End the broadcast.
+    private func endActivity(_ label: String = "Done") {
+        guard let activity else { return }
+        let final = ScanActivityAttributes.ContentState(phaseLabel: label, progress: 1)
+        self.activity = nil
+        Task { await activity.end(.init(state: final, staleDate: nil), dismissalPolicy: .immediate) }
     }
 }
