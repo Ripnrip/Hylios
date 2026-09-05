@@ -12,3 +12,7 @@ xcuserdata/
 # ✨ SwiftPM
 .build/
 .swiftpm/
+
+# 🔐 Secrets — never commit
+.env
+dist/
