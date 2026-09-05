@@ -20,7 +20,6 @@
 		42348D71D1B8F540FDF0DEAE /* SuccessCelebration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1200FA2F8059517B4D046BBA /* SuccessCelebration.swift */; };
 		4383DA6CB68AB86AFB194F2A /* SpaceTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F904E031EC84CF1690F726C /* SpaceTypes.swift */; };
 		47A1661E5A6AE255BEF51DAF /* ScanLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90393CE8D0580E56C031A0A /* ScanLiveActivity.swift */; };
-		4B6CE0314AF90E9EFEFFA9D9 /* HyliosClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = E5FDF03A6646F040AEF365D5 /* HyliosClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4F491647C234926BCF90228E /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CB2DEFEFB97FF134487851 /* Haptics.swift */; };
 		4F845F84276518187A7AF8EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632C6194F5639A9DD73D67EF /* Assets.xcassets */; };
 		6EBFD62B4033AFE4F875602E /* RoomCaptureViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB0AA6840E66D02727F284 /* RoomCaptureViewRepresentable.swift */; };
@@ -62,13 +61,6 @@
 			remoteGlobalIDString = A8721291EDE1C54DD59E211C;
 			remoteInfo = EtherealDimension;
 		};
-		936CEB5E6D49B1AEBCD730CB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AE577E0DB6691CD380C7503E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F574E9BFA1B636EA88BBA319;
-			remoteInfo = HyliosClip;
-		};
 		B62A637BB8BF4420F7793093 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AE577E0DB6691CD380C7503E /* Project object */;
@@ -95,17 +87,6 @@
 				E3083BEE3849285FD57286EB /* HyliosScanActivity.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A776C30D34B3AE3CDAE74B17 /* Embed App Clips */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
-			dstSubfolderSpec = 16;
-			files = (
-				4B6CE0314AF90E9EFEFFA9D9 /* HyliosClip.app in Embed App Clips */,
-			);
-			name = "Embed App Clips";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -383,13 +364,11 @@
 				19E445268415476C7C8AD813 /* Sources */,
 				DFFCB7720400C7471FB41813 /* Resources */,
 				57D7433BC6FBAB10C59C3755 /* Embed Foundation Extensions */,
-				A776C30D34B3AE3CDAE74B17 /* Embed App Clips */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				C4A16C7EE1CF2729FD33340F /* PBXTargetDependency */,
-				26AABF4DF9EB3ACF493ED2BE /* PBXTargetDependency */,
 			);
 			name = EtherealDimension;
 			packageProductDependencies = (
@@ -575,11 +554,6 @@
 			target = A8721291EDE1C54DD59E211C /* EtherealDimension */;
 			targetProxy = 1D3B99E8EB2FAE97353AB022 /* PBXContainerItemProxy */;
 		};
-		26AABF4DF9EB3ACF493ED2BE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F574E9BFA1B636EA88BBA319 /* HyliosClip */;
-			targetProxy = 936CEB5E6D49B1AEBCD730CB /* PBXContainerItemProxy */;
-		};
 		4F19D34913C1EF4A837F846E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A8721291EDE1C54DD59E211C /* EtherealDimension */;
@@ -645,7 +619,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 260905003;
+				CURRENT_PROJECT_VERSION = 260905005;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 5Y7NBCKHJP;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -714,7 +688,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 260905003;
+				CURRENT_PROJECT_VERSION = 260905005;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 5Y7NBCKHJP;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -754,7 +728,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.binarybros.EtherealDimension;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -773,7 +747,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 6.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -809,7 +783,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 6.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -845,7 +819,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.binarybros.EtherealDimension;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};

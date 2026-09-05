@@ -4,6 +4,51 @@
 
 ---
 
+## 2026-09-05 (later): "The Silent Questionnaire, or: What the 409 Wouldn't Say" 🎭🎂
+
+### 🌟 The Tale
+
+The submission was "blocked" — that was all Apple would say. `STATE_ERROR.ENTITY_STATE_INVALID`, a 409 whose entire diagnostic payload is *please check associated errors to see why*, delivered without, and this is the remarkable part, **any associated errors**. Twelve identical rejections. An error that tells you to read the errors it didn't attach.
+
+Except it had. They were there the whole time, in a `meta.associatedErrors` block four levels deep in the JSON, past the point where a truncating log formatter would keep them. And when finally read, the door opened in one minute.
+
+The full walk had already cleared every classic suspect: screenshots present for all three iPhone display types, build `VALID`, compliance answered, contact info on file since 2024, localization text complete, IDFA answered (`usesIdfa=false`, quietly null this whole time). What remained was the **age rating declaration** — specifically the one on the *draft* AppInfo, not the live one. Apple had grown seven new questions since the 1.x era (`advertising`, `userGeneratedContent`, `gunsOrOtherWeapons`, `ageAssurance`, `messagingAndChat`, `parentalControls`, `healthOrWellnessTopics`), and a thirteen-month-old draft answers none of them.
+
+The patching itself was a comedy of types. The entity validates **as a whole** — one attribute at a time is rejected for the six you're *not* sending. And the seven questions are not the same type: six are booleans, but `gunsOrOtherWeapons` is an enum expecting `'NONE'`. Apple's API, to its credit, narrates every wrong guess in plain text. Two failed PATCHes later, the map was complete.
+
+```
+PATCH /v1/ageRatingDeclarations/{draft-appInfo-id}  →  200
+POST /v1/reviewSubmissionItems                     →  201 ✨ first success of the night
+PATCH /v1/reviewSubmissions/{id} {submitted:true}  →  WAITING_FOR_REVIEW
+```
+
+**Hylios 2.0 is in Apple's review queue.** Build `260905005`, iPhone-only, no App Clip, submitted 2026-09-05 07:06 UTC.
+
+### 📦 What We Accomplished
+
+- **SUBMITTED** — submission `23f7c549…` → `WAITING_FOR_REVIEW`; version 2.0, build `260905005`
+- **Root-caused the generic 409** — `meta.associatedErrors` names the blocker; the missing piece was 7 unanswered modern age-rating questions on the *draft* AppInfo's declaration
+- **Learned the submission flip** — no `/submit` endpoint exists; it's `PATCH /v1/reviewSubmissions/{id}` with `"submitted": true` (404: *"The relationship 'submitted' does not exist"* is the wrong-path tell)
+- **Dropped the App Clip from the build** (`260905004+`) — an embedded clip makes the App Clip card (3000×2000 + subtitle) mandatory for review; target kept, dependency commented in `project.yml`
+- **Restored iPhone-only** — the rewrite's `TARGETED_DEVICE_FAMILY "1,2"` had silently added iPad support the 1.3 listing never had, making iPad screenshots mandatory; the app's own LiDAR gate means no simulator can produce one. `"1"` it is (`260905005`)
+
+### 📋 TODO Carried Forward
+
+- [ ] **Device QA on real LiDAR hardware** — 2.0 went to review without it; the first real-hardware pass should ideally beat Apple's reviewer
+- [ ] 📌 **PINNED:** App Clip card artwork → re-embed clip → create default experience → resubmit
+- [ ] `/scan` still doesn't exist; the AASA already claims it
+- [ ] 2.0 listing screenshots are 1.x-era (shipped as-is; refresh for 2.1)
+
+### 🪞 Reflection
+
+The lesson of the night: **read the whole error body before deciding it's content-free.** The answer was attached to every single failure — I was truncating it at 500 characters and concluding "generic." `meta.associatedErrors` is where ASC hides the actual diagnosis, and it is worth more than every guess in between.
+
+Also: when a form is thirteen months old, the questions have changed. "It shipped 1.3 with this exact metadata" was true and useless — the *rules* moved.
+
+*The questionnaire was silent, the answer was attached, and the plane finally took off.* ✈️✨
+
+---
+
 ## 2026-09-05: "The Distributor's Signature, or: Twenty-Five Days in the Departure Lounge" 🎭📦
 
 ### 🌟 The Tale

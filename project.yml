@@ -17,7 +17,7 @@ settings:
     CODE_SIGN_STYLE: Automatic
     ENABLE_USER_SCRIPT_SANDBOXING: "NO"
     MARKETING_VERSION: "2.0"
-    CURRENT_PROJECT_VERSION: "260905003"
+    CURRENT_PROJECT_VERSION: "260905005"
 targets:
   EtherealDimension:
     type: application
@@ -39,8 +39,13 @@ targets:
     dependencies:
       - target: HyliosScanActivity
         embed: true
-      - target: HyliosClip
-        embed: true
+      # 🚪 App Clip deliberately NOT embedded (2026-09-05). Shipping a clip makes an
+      #    App Clip default experience — a 3000×2000 card + subtitle — MANDATORY for
+      #    App Store review, and that artwork doesn't exist yet. The HyliosClip target
+      #    below is kept intact and buildable; re-add this dependency to ship it.
+      #    See TODO.md → "App Clip".
+      # - target: HyliosClip
+      #   embed: true
     info:
       path: EtherealDimension/Info.plist
       properties:
@@ -64,7 +69,11 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.binarybros.EtherealDimension
-        TARGETED_DEVICE_FAMILY: "1,2"
+        # 📱 iPhone only — matches the shipping 1.3 listing. The rewrite had set "1,2",
+        #    silently adding iPad support the app never had, which makes iPad
+        #    screenshots mandatory for review. Hylios also gates on LiDAR, so no
+        #    simulator can produce a usable iPad shot anyway.
+        TARGETED_DEVICE_FAMILY: "1"
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ENABLE_PREVIEWS: "YES"
   HyliosScanActivity:
@@ -86,7 +95,7 @@ targets:
         SKIP_INSTALL: "YES"
         CODE_SIGN_STYLE: Automatic
         DEVELOPMENT_TEAM: 5Y7NBCKHJP
-        TARGETED_DEVICE_FAMILY: "1,2"
+        TARGETED_DEVICE_FAMILY: "1"
         SWIFT_VERSION: "6.0"
   HyliosClip:
     type: com.apple.product-type.application.on-demand-install-capable
