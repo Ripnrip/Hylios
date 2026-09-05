@@ -42,6 +42,12 @@ Three more things landed after the changelog was first drafted, so: the AASA wen
 
 Then App Store Connect drew a line. Repointing the two legacy App Clip experiences turned out to be impossible by design — `link` is immutable on an advanced experience, and creating replacements demands a 3000×2000 header image and per-language localizations that don't exist yet. **Parked deliberately** (see `TODO.md`). Instead we went default-only: the stale `1.4` draft from December 2024 was repurposed into the **2.0 version** with `260905003` attached. No header image required, and the vestigial draft finally earns its keep.
 
+### 🔐 Two Late Security Beats
+
+Staging the commit surfaced that the new `archive.sh` and README were about to publish the App Store Connect **key ID and issuer ID into a public repo**. Not credentials on their own — the `.p8` is the secret — but no reason to hand out half the lock. Both moved into the gitignored `.env`, with the script failing fast and loudly if they're absent.
+
+Appending them to `.env` then promptly **corrupted the GitHub PAT**, because the file had no trailing newline and `ASC_KEY_ID=` fused onto the end of the token. Caught it on a `value_len=50` that should have been 40, repaired by splitting on the glued boundary, and re-verified the token still authenticates as `gthemystic`. A reminder that `>>` is not an editor.
+
 ### 📋 TODO Carried Forward
 
 - [x] ~~Deploy the site so the AASA is live~~ — PR #4, live and serving `application/json`
