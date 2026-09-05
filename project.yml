@@ -17,7 +17,7 @@ settings:
     CODE_SIGN_STYLE: Automatic
     ENABLE_USER_SCRIPT_SANDBOXING: "NO"
     MARKETING_VERSION: "2.0"
-    CURRENT_PROJECT_VERSION: "260811004"
+    CURRENT_PROJECT_VERSION: "260905003"
 targets:
   EtherealDimension:
     type: application
@@ -50,6 +50,17 @@ targets:
         NSSupportsLiveActivities: true
         CFBundleShortVersionString: "$(MARKETING_VERSION)"
         CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        # 🔄 Apple rejects iPad-capable bundles that stay silent on orientation —
+        #    iPad must offer all four or declare itself full-screen-only.
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        "UISupportedInterfaceOrientations~ipad":
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.binarybros.EtherealDimension
@@ -96,6 +107,19 @@ targets:
         NSSupportsLiveActivities: true
         CFBundleShortVersionString: "$(MARKETING_VERSION)"
         CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        # 🎩 XcodeGen omits this for on-demand-install-capable targets, and Apple
+        #    rejects the clip without it: "Invalid Bundle OS Type code."
+        CFBundlePackageType: APPL
+        # 🔄 Same orientation contract as the parent app (see above)
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        "UISupportedInterfaceOrientations~ipad":
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.binarybros.EtherealDimension.Clip

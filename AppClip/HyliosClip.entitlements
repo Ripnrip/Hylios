@@ -8,5 +8,13 @@
 	<array>
 		<string>$(AppIdentifierPrefix)com.binarybros.EtherealDimension</string>
 	</array>
+	<!-- 🚪 Without this the clip can never be invoked from a URL, no matter what
+	     App Clip Experiences are registered in App Store Connect. Must exactly match
+	     the host in the invocation URL, and that host must serve
+	     /.well-known/apple-app-site-association over HTTPS with no redirects. -->
+	<key>com.apple.developer.associated-domains</key>
+	<array>
+		<string>appclips:etherealdimension.io</string>
+	</array>
 </dict>
 </plist>
